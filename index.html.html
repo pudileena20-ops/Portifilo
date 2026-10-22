@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Leena Pudi – Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8f7;--surface:#ffffff;--ink:#16302b;--muted:#5a6f6a;--accent:#0e7c66;--accent2:#e9a23b;--line:#d9e3df;--chip:#e3f1ec;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1c19;--surface:#162622;--ink:#e8f1ee;--muted:#9bb2ac;--accent:#4fd1b0;--accent2:#f0b95a;--line:#26403a;--chip:#1d3530}}
+:root[data-theme="dark"]{--bg:#0f1c19;--surface:#162622;--ink:#e8f1ee;--muted:#9bb2ac;--accent:#4fd1b0;--accent2:#f0b95a;--line:#26403a;--chip:#1d3530}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.15}
+a{color:var(--accent)}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+header.top{padding:72px 0 48px}
+.avatar{width:84px;height:84px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:700 30px Fraunces,serif;margin-bottom:22px}
+h1{font-size:clamp(2.4rem,7vw,4rem);font-weight:700}
+.role{font-size:1.25rem;color:var(--accent);margin:8px 0 18px;font-weight:500}
+.lead{max-width:62ch;color:var(--muted);font-size:1.05rem}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;border:1.5px solid var(--accent);text-decoration:none;font-weight:500;color:var(--accent)}
+.btn.main{background:var(--accent);color:#fff}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent2);outline-offset:2px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+h2{font-size:1.7rem;margin-bottom:22px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:18px}
+.proj h3{font-size:1.35rem}
+.proj .meta{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.chip{background:var(--chip);color:var(--ink);padding:3px 11px;border-radius:99px;font-size:.85rem}
+.proj ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.proj li{margin-bottom:6px}
+.feat{border-left:5px solid var(--accent2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.grid h3{font-size:1.05rem;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.edu p,.cert p{margin:0 0 14px}
+.edu small,.cert small{color:var(--muted)}
+footer{padding:36px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<div class="avatar" aria-hidden="true">LP</div>
+<h1>Leena Pudi</h1>
+<div class="role">Data Analyst</div>
+<p class="lead">I turn raw, messy data into clear dashboards and reports that help people make decisions. I work with SQL Server, Power BI, DAX, Excel and Python, and I am looking for a Data Analyst or BI Analyst role.</p>
+<div class="links">
+<a class="btn main" href="mailto:pudileena20@gmail.com">Email me</a>
+<a class="btn" href="https://linkedin.com/in/leenapudi-557091298">LinkedIn</a>
+<a class="btn" href="https://github.com/pudileena20-ops">GitHub</a>
+</div>
+</header>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<article class="proj feat">
+<h3>Restaurant Food Safety Dashboard</h3>
+<div class="meta"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Excel</span></div>
+<ul>
+<li>Analyzed 138 inspections across 26 restaurants in five city zones to find food-safety risk hotspots.</li>
+<li>Built a Power BI dashboard on a three-table data model, with DAX measures for inspection grades and risk levels.</li>
+<li>Added a zone-wise risk chart so high-risk areas can be inspected first.</li>
+<li>Added drill-through to each restaurant's full violation history for quick root-cause review.</li>
+</ul>
+</article>
+
+<article class="proj">
+<h3>Insight Flow AI Dashboard (Hackathon)</h3>
+<div class="meta"><span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Pandas</span><span class="chip">Plotly</span><span class="chip">Gemini API</span></div>
+<ul>
+<li>Built an interactive Streamlit dashboard tracking total revenue, average sale value and category count from raw CSV sales data.</li>
+<li>Cleaned and prepared the data with Pandas so the KPI results were reliable.</li>
+<li>Created interactive Plotly charts of revenue by product and category.</li>
+<li>Used the Gemini API to write executive summaries automatically instead of by hand.</li>
+</ul>
+</article>
+
+<article class="proj">
+<h3>DocMind AI: RAG Question-Answering App</h3>
+<div class="meta"><span class="chip">Python</span><span class="chip">LangChain</span><span class="chip">Groq (Llama)</span><span class="chip">Docker</span></div>
+<ul>
+<li>Built a pipeline that answers questions from PDF documents using embeddings stored in a vector database.</li>
+<li>Generated answers with Groq's Llama model, based on the text retrieved from the document.</li>
+<li>Packaged the app with Docker, with both a Streamlit interface and a command-line option.</li>
+</ul>
+</article>
+</section>
+
+<section id="skills">
+<h2>Skills and tools</h2>
+<div class="grid">
+<div><h3>Analysis and BI</h3><div class="chips"><span class="chip">SQL Server</span><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Excel</span><span class="chip">Pivot Tables</span><span class="chip">Data Modeling</span><span class="chip">KPI Reporting</span></div></div>
+<div><h3>Python</h3><div class="chips"><span class="chip">Pandas</span><span class="chip">NumPy</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Plotly</span><span class="chip">Streamlit</span><span class="chip">Data Cleaning</span></div></div>
+<div><h3>GenAI</h3><div class="chips"><span class="chip">Gemini API</span><span class="chip">LangChain</span><span class="chip">Groq (Llama)</span></div></div>
+<div><h3>Tools</h3><div class="chips"><span class="chip">SSMS</span><span class="chip">Jupyter Notebook</span><span class="chip">VS Code</span><span class="chip">Git</span><span class="chip">Docker</span></div></div>
+</div>
+</section>
+
+<section id="about">
+<h2>Education and certifications</h2>
+<div class="grid">
+<div class="edu">
+<p><strong>Bachelor of Science</strong> (2021–2024)<br><small>Govt Degree College Satyavedu, SV University, Tirupati</small></p>
+<p><strong>Intermediate (MPC)</strong> (2019–2021)<br><small>Govt Junior College Satyavedu</small></p>
+</div>
+<div class="cert">
+<p><strong>Full Stack Data Science and AI Program</strong><br><small>Naresh IT, Hyderabad, 2026</small></p>
+<p><strong>Data Analysis with Python</strong><br><small>freeCodeCamp, 2026</small></p>
+<p><strong>Web Development and SQL Server Certification</strong><br><small>Naresh IT, Hyderabad, 2024</small></p>
+</div>
+</div>
+<p style="color:var(--muted)">Languages: English, Telugu, Tamil. NSS volunteer in Swachh Bharat Abhiyan.</p>
+</section>
+
+<footer id="contact">
+<h2>Contact</h2>
+<p><a href="mailto:pudileena20@gmail.com">pudileena20@gmail.com</a> · +91 7680047721 · Hyderabad, India</p>
+</footer>
+</div>
+</body>
+</html>
